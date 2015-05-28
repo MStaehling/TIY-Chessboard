@@ -21,91 +21,128 @@
 
 
     <style>
-        
+      /*.chessboard .file.legend {
+        display: inline-block;
+
+      }*/
+      .chessboard .file.legend p {
+        display: inline-block;
+        font-size: 4ex;
+width: 12.5%;
+float:left;
+text-align: center;
+margin: 0;
+      }
+        /*.chessboard .rank-8 .file-b::before {
+  content: 'b';
+  top: -3ex;
+  position: absolute;
+  left: 18.75%;
+}*/
     </style>
     <main class="container">
-      <div class="chessboard">
-        <div class="row rank-8">
-            <div class="square file-a"></div>
-            <div class="square file-b"></div>
-            <div class="square file-c"></div>
-            <div class="square file-d"></div>
-            <div class="square file-e"></div>
-            <div class="square file-f"></div>
-            <div class="square file-g"></div>
-            <div class="square file-h"></div>
+        <div class="chessboard">
+            <section class="file legend">
+                <p class="legend">a</p>
+                <p class="legend">b</p>
+                <p class="legend">c</p>
+                <p class="legend">d</p>
+                <p class="legend">e</p>
+                <p class="legend">f</p>
+                <p class="legend">g</p>
+                <p class="legend">h</p>
+            </section>
+            <div class="row rank-8">
+                <div class="square file-a black rook"></div>
+                <div class="square file-b black knight"></div>
+                <div class="square file-c black bishop"></div>
+                <div class="square file-d black king"></div>
+                <div class="square file-e black queen"></div>
+                <div class="square file-f black bishop"></div>
+                <div class="square file-g black knight"></div>
+                <div class="square file-h black rook"></div>
+            </div>
+            <div class="row rank-7">
+                <div class="square file-a black pawn"></div>
+                <div class="square file-b black pawn"></div>
+                <div class="square file-c black pawn"></div>
+                <div class="square file-d black pawn"></div>
+                <div class="square file-e black pawn"></div>
+                <div class="square file-f black pawn"></div>
+                <div class="square file-g black pawn"></div>
+                <div class="square file-h black pawn"></div>
+            </div>
+            <div class="row rank-6">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </div>
+            <div class="row rank-5">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </div>
+            <div class="row rank-4">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </div>
+            <div class="row rank-3">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </div>
+            <div class="row rank-2">
+                <div class="square file-a white pawn"></div>
+                <div class="square file-b white pawn"></div>
+                <div class="square file-c white pawn"></div>
+                <div class="square file-d white pawn"></div>
+                <div class="square file-e white pawn"></div>
+                <div class="square file-f white pawn"></div>
+                <div class="square file-g white pawn"></div>
+                <div class="square file-h white pawn"></div>
+            </div>
+            <div class="row rank-1">
+                <div class="square file-a white rook"></div>
+                <div class="square file-b white knight"></div>
+                <div class="square file-c white bishop"></div>
+                <div class="square file-d white king"></div>
+                <div class="square file-e white queen"></div>
+                <div class="square file-f white bishop"></div>
+                <div class="square file-g white knight"></div>
+                <div class="square file-h white rook"></div>
+            </div>
+            <section class="file legend">
+                <p class="legend">a</p>
+                <p class="legend">b</p>
+                <p class="legend">c</p>
+                <p class="legend">d</p>
+                <p class="legend">e</p>
+                <p class="legend">f</p>
+                <p class="legend">g</p>
+                <p class="legend">h</p>
+            </section>
         </div>
-        <div class="row rank-7">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <div class="row rank-6">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <div class="row rank-5">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <div class="row rank-4">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <div class="row rank-3">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <div class="row rank-2">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-        <div class="row rank-1">
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-        </div>
-      </div>
     </main>
 </body>
 

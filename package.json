@@ -1,0 +1,19 @@
+{
+  "name": "TIY-Chessboard",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MStaehling/TIY-Chessboard.git"
+  },
+  "author": "\"Michael Staehling <michael.staehling@gmail.com>",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/MStaehling/TIY-Chessboard/issues"
+  },
+  "homepage": "https://github.com/MStaehling/TIY-Chessboard"
+}

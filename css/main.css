@@ -146,7 +146,7 @@ textarea {
     position: relative;
 }
 .chessboard .square {
-    background-color: lightgrey;
+    background-color: grey;
     width: 12.5%;
     padding-bottom: 12.5%;
     outline: 1px solid red;
@@ -156,13 +156,13 @@ textarea {
     position: absolute;
 }
 .chessboard .square:nth-child(even) {
-    background-color: grey;
-}
-.chessboard .row:nth-child(even) .square:nth-child(even) {
     background-color: lightgrey;
 }
-.chessboard .row:nth-child(even) .square:nth-child(odd) {
+.chessboard .row:nth-child(even) .square:nth-child(even) {
     background-color: grey;
+}
+.chessboard .row:nth-child(even) .square:nth-child(odd) {
+    background-color: lightgrey;
 }
 .chessboard .square::after {
     content: ' ';

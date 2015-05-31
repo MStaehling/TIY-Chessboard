@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/MStaehling/TIY-Chessboard/issues"
   },
-  "homepage": "https://github.com/MStaehling/TIY-Chessboard"
+  "homepage": "https://github.com/MStaehling/TIY-Chessboard",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "browser-sync": "^2.7.1"
+  },
+  "devDependencies": {}
 }

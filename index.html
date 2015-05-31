@@ -8,12 +8,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -136,14 +137,18 @@
                 <p class="legend">h</p>
             </section>
             <form>
-              <button class="buttons">&#9654;</button>
-              <button class="buttons">| <</button>
-              <button class="buttons"><</button>
-              <button class="buttons">></button>
-              <button class="buttons">> |</button>
+              <button class="buttons play">&#9654;</button>
+              <button class="buttons first">| <</button>
+              <button class="buttons previous"><</button>
+              <button class="buttons next">></button>
+              <button class="buttons last">> |</button>
             </form>
         </div>
     </main>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="scripts/models.js"></script>
 </body>
 
 </html>

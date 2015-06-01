@@ -3,17 +3,28 @@
 
 //got working with sean
 $('.next').click(function() {
-  chess.counter = (chess.counter + 1)% chess.game.length;
-  chess.move(chess.game[chess.counter]);
+  // chess.counter = (chess.counter + 1)% chess.game.length;
+
+  if (chess.counter < chess.game.length) {
+    chess.move(chess.game[chess.counter]);
+    chess.counter = chess.counter + 1;
+  }
+
+
 });
 
 $('.last').click(function(){
-  for (i = 0; i < chess.game.length; i++) {
-    chess.move(chess.game[i]);
+  for (chess.counter; chess.counter < chess.game.length; chess.counter++) {
+    chess.move(chess.game[chess.counter]);
   };
 });
 
 
+//Did this in class from Jorge's code
+// function  move(fromRank, fromFile, toRank, toFile, piece) {
+//   $('.rank-' + fromRank + ' > ' + '.file-' + fromFile).removeClass(piece);
+//   $('.rank-' + toRank + ' > ' + '.file-' + fromFile).removeClass(piece);
+// }
 
 
 
